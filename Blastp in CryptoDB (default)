@@ -1,0 +1,3 @@
+https://cryptodb.org/cryptodb/app/workspace/blast/new
+
+Expectation value: 10; Max Target Sequences: 100; Max matches in query range: 0; Word Size: 6; Scoring Matrix: BLOSUM62; Gap Costs (Open/Extension): 11,1; Compositional adjustments: Conditional compositional score matrix adjustment Low complexity regions: no filter; Mask for lookup table: false; Mask lower case letters: false
