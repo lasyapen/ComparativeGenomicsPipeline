@@ -1,0 +1,3 @@
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins
+
+Database: nr; Max target sequences = 100; Short queries (checked); Expect threshold: 0.05; Word size = 5; Max matches in a query range: 0; Matrix BLOSUM62; Gap Costs: Existence: 11 Extension: 1; Compositional adjustments: Conditional compositional score matrix adjustment
