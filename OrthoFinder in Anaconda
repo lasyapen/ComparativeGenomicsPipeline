@@ -1,0 +1,7 @@
+source activate /orthology_analysis/env-ortho
+
+conda install -c bioconda diamond
+
+conda install orthofinder
+
+orthofinder -f FASTAS
