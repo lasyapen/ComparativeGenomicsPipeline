@@ -1,0 +1,3 @@
+agat_sq_stat_basic.pl -i Cmel.gff3
+
+agat_sp_statistics.pl -gff Cmel.gff3
