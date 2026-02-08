@@ -1,0 +1,55 @@
+awk -F’: ‘ ‘{for (i = 2; i<= NF; i++) if ($i!~ /^OG/) printf “%s%s”, sep, $i; sep=“\n”}’
+
+Orthogroups.txt | tr -d ‘:’ |
+
+awk ‘{
+
+for (i = 1; i < = NF; i + + ) {
+
+if ($i ~ /^CmeUKMEL1/)
+
+$i = “CryptoDB-55_CmeleagridisUKMEL1_AnnotatedProteins|” $i;
+
+else if ($i ~ /^cmbei/)
+
+$i = “CmBEI_proteins_file|” $i;
+
+else if ($i ~ /^cpbgf/)
+
+$i = “CpBGF_protein_file|” $i;
+
+}
+
+print
+
+}’ |
+
+awk ‘{
+
+for (i = 1; i < = NF; i + + ) {
+
+if ($i ~ /^CmBEI/) {
+
+cmbei = cmbei $i “ ”
+
+} else if ($i ~ /^CpBGF/) {
+
+cpbgf = cpbgf $i “ ”
+
+} else if ($i ~ /^Crypto/) {
+
+crypto = crypto $i “ ”
+
+}
+
+}
+
+print cmbei cpbgf crypto
+
+cmbei = “”
+
+cpbgf = “”
+
+crypto = “”
+
+}’ > Orthogroups2.txt
