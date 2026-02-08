@@ -1,0 +1,1 @@
+circos -conf config_file.conf
