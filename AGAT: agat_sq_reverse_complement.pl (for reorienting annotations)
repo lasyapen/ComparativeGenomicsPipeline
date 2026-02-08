@@ -1,0 +1,1 @@
+agat_sq_reverse_complement.pl --gff Cmel_annotations_Chr4_Chr6.gff3 --fasta Cmel_genome.fasta -o Cmel_annotations_reoriented.gff3
