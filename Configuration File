@@ -1,0 +1,89 @@
+#Add this to run circos faster
+
+#alias circos = …
+
+#Append this line to the ~/.bashrc to load when starting a new session
+
+# Chromosome name, size, and color definition
+
+karyotype = ChromosomeContigLabels.txt
+
+<ideogram> <spacing> default = 0.005r < /spacing > radius = 0.50r
+
+thickness = 20p
+
+fill = yes
+
+stroke_color = dgrey
+
+stroke_thickness = 2p
+
+show_label = yes
+
+#see etc/fonts.conf for list of font names
+
+label_font = default
+
+label_radius = 1r + 75p
+
+label_size = 60
+
+label_parallel = no < /ideogram > show_ticks = yes
+
+show_tick_labels = yes < ticks > radius = 1r + 10p
+
+color = black
+
+thickness = 3p
+
+# the tick label is derived by multiplying the tick position
+
+# by ‘multiplier’ and casting it in ‘format’:#
+
+# sprintf(format,position*multiplier)#
+
+multiplier = 1e-6
+
+# %d - integer
+
+# %f - float
+
+# %.1 f - float with one decimal
+
+# %.2 f - float with two decimals#
+
+# for other formats, see http://perldoc.perl.org/functions/sprintf.html
+
+format = %d< tick >spacing=70000 u
+
+size = 50p< /tick ># < tick >#spacing = 25000 u
+
+#size = 15p
+
+#show_label = yes
+
+#label_size = 20p
+
+#label_offset = 10p
+
+#format = %d
+
+# < /tick >< /ticks >########### NEW< links >< link >file = Links.txt
+
+#color = black_a5
+
+radius = 0.95r
+
+bezier_radius = 0.1r
+
+thickness = 15
+
+ribbon = yes< /link >< /links >##########
+
+ < image ># Included from Circos distribution.<< include etc/image.conf >>#To modify the size of the output image, default is 1500
+
+#radius* = 3000p< /image>
+
+<<include etc/colors_fonts_patterns.conf>>
+
+<<include etc/housekeeping.conf>>
