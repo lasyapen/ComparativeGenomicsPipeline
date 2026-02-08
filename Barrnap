@@ -1,0 +1,1 @@
+barrnap --kingdom euk –outseq Cmel_barrnap.fasta --evalue 1e-06 --lencutoff 0.8 Cmel_genome.fasta
