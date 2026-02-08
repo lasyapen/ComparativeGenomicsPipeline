@@ -1,0 +1,1 @@
+flye --nano-raw ../Cmel.fastq -o Cmel_flye -g 9 m
