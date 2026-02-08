@@ -1,0 +1,1 @@
+minimap2 -a --secondary = no Cmel_genome.fasta reads_with_telomeres.fastq > telomere_map.sam
