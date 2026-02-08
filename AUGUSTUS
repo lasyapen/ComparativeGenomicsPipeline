@@ -1,0 +1,3 @@
+perl ~/Augustus/scripts/autoAugTrain.pl --cpus=10 --trainingset=CryptoDB-64_CparvumIOWA-ATCC_AnnotatedProteins.fasta --species=trained_species -g=genome.fa --workingdir=./autoAug --optrounds = 1
+
+augustus --gff3=on --stopCodonExcludedFromCDS=false --species=trained_species–softmasking=0–AUGUSTUS_CONFIG_PATH=./augustus/config --strand=both–genemodel=partial Cmel_genome.fasta>augustus.gff
