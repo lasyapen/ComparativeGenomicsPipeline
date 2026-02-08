@@ -1,0 +1,9 @@
+bwa index polished_1.fasta
+
+bwa mem -t 16 -a polished_1.fasta SRR793561_1.fastq.gz > alignments_1.sam
+
+bwa mem -t 16 -a polished_1.fasta SRR793561_2.fastq.gz > alignments_2.sam
+
+polypolish_insert_filter.py --in1 alignments_1.sam --in2 alignments_2.sam --out1 filtered_1.sam --out2 filtered_2.sam
+
+polypolish polished_1.fasta filtered_1.sam filtered_2.sam > polished_2.fasta
