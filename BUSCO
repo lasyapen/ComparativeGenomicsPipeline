@@ -1,0 +1,1 @@
+busco -i < genome.fasta > -l./apicomplexa_odb10 -o BUSCO_CM.txt -m genome
