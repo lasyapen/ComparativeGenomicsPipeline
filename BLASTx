@@ -1,0 +1,1 @@
+blastx -query Cmel_genome.fasta -db nr -out results_blastx.txt -outfmt 6 -evalue 1e-5 -num_threads 4
