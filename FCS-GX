@@ -1,0 +1,1 @@
+python $EBROOTNCBIMINFCS/fcs.py screen genome --fasta Cmel_genome.fasta --out-dir./fcs_gx_out/ --gx-db “$GXDB_LOC/gxdb” --tax-id 93969
