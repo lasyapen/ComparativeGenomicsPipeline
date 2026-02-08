@@ -1,0 +1,1 @@
+liftoff -g CpBGF.gff3 -o bgf -infer_genes -infer_transcripts -polish Cmel_genome.fasta bgf.fa
